@@ -6,10 +6,10 @@ import UseMarvelService from '../../services/MarvelService';
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 
-import './singleComicPage.scss';
+import './singleComicsPage.scss';
 // import xMen from '../../resources/img/x-men.png';
 
-const SingleComicPage = () => {
+const SingleComicsPage = () => {
     const {comicId} = useParams();
     const [comic, setComic] = useState(null);
     const {loading, error, getComic, clearError} = UseMarvelService();
@@ -59,4 +59,4 @@ const View = ({comic}) => {
     )
 }
 
-export default SingleComicPage;
+export default SingleComicsPage;
